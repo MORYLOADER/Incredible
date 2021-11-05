@@ -333,6 +333,10 @@ footer{
 
 
 @media screen and (max-width: 720px) {
+    
+    nav{
+    padding: 1rem;
+    }
 
     nav ul{
         position: fixed;
