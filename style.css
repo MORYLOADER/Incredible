@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Work+Sans:wght@300;400&display=swap');
+
+
+:root{
+    --Fire-Opal: #E95D48;
+    --Pulplish-Blue: #A3518B;
+    --Grayish-White: #F6F7EB;
+    --light-black: #191919;
+    --montserrrat: 'Montserrat', sans-serif;
+    --work-san: 'Work Sans', sans-serif;
+    --light-font: 300;
+    --normal-font: 400;
+    --bold-font: 700;
+    --transition: 0.3s;
+    --line-height: 1.7rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 18px;
+    background-color: #fff;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3.5rem;
+    background-color: var(--Fire-Opal);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a{
+    color: var(--Grayish-White);
+    transition: var(--transition);
+}
+
+nav a:hover{
+    color: var(--Pulplish-Blue);
+    border-bottom: 2px solid var(--Pulplish-Blue);
+}
+
+nav ul{
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul li{
+    font-family: var(--work-san);
+    font-weight: var(--normal-font);
+    font-size: 15px;
+}
+
+.burger-menu{
+    color: var(--Grayish-White);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.hero{
+    background-color: var(--Grayish-White);
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-text{
+    text-align: center;
+    padding: 2em 1em;
+}
+
+h1{
+    font-family: var(--montserrrat);
+    font-weight: var(--bold-font);
+    font-size: 3rem;
+    color: var(--Pulplish-Blue);
+}
+
+.hero-p{
+    font-family: var(--work-san);
+    font-weight: var(--normal-font);
+    color: var(--Fire-Opal);
+    font-size: 18px;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+.logo-img-cont{
+    width: 40%;
+    height: auto;
+}
+
+.brand-logos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.brands{
+    background-color: var(--Grayish-White);
+    margin-top: 1rem;
+    padding: 2em 1em;
+}
+
+.brand-p{
+    text-align: center;
+    font-family: var(--montserrrat);
+    font-weight: var(--bold-font);
+    font-size: 2rem;
+    color: var(--Fire-Opal);
+    margin-bottom: 1em;
+}
+
+.about img{
+    width: 100%;
+    height: auto;
+}
+
+.about{
+    text-align: center;
+    background-color: var(--light-black); 
+    margin-top: 1em;  
+}
+
+.about-text{
+    padding: 1.8rem 2rem;
+}
+
+h2{
+    
+    font-family: var(--montserrrat);
+    font-weight: var(--bold-font);
+    color: var(--Fire-Opal);
+    margin-bottom: 0.8em;
+}
+
+.about-p{
+    color: var(--Grayish-White);
+    line-height: var(--line-height);
+    font-family: var(--work-san);
+    font-weight: var(--normal-font);
+    font-size: 15px;
+}
+
+img.card-img{
+    width: 100%;
+    height: 50vh;
+}
+
+.service-cards{
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services{
+    margin-top: 3rem;
+}
+
+.services h2{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.card-text{
+    margin-top: 1em;
+    height: 40vh;
+}
+
+.card{
+    margin-bottom: 2em;
+}
+
+.card-text-head{
+    margin-bottom: 10px;
+    color: var(--Fire-Opal);
+    font-family: var(--work-san);
+    font-weight: var(--bold-font);
+    font-size: 20px;
+}
+
+.service-1{
+    margin-bottom: 1.5em;
+    font-family: var(--work-san);
+    font-weight: var(--light-font);
+    color: var(--light-black);
+    font-size: 15px;
+    line-height: var(--line-height);
+}
+
+button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--Fire-Opal);
+    border: none;
+    cursor: pointer;
+    
+}
+
+button a{
+    color: var(--Grayish-White);
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+.shop{
+    display: flex;
+    justify-content: center;
+}
+
+.shop img{
+    width: 20px;
+    height: 20px;
+}
+
+a.shop-more{
+    color: var(--Fire-Opal);
+    font-family: var(--work-san);
+    font-weight: var(--bold-font);
+    margin-right: 5px;
+}
+
+a.shop-more:hover{
+    opacity: 0.7;
+}
+
+footer{
+    background-color: var(--Fire-Opal);
+    margin-top: 4em;
+    padding: 1em;
+}
+
+.footer-lg{
+    margin-bottom: 1em;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.icon-p{
+    font-family: var(--work-san);
+    font-weight: var(--normal-font);
+    font-size: 15px;
+    color: var(--light-black);
+    margin-left: 5px;
+}
+
+.footer-nav ul li{
+    font-family: var(--work-san);
+    font-weight: var(--normal-font);
+    font-size: 15px;
+    margin-bottom: 1em;
+    
+}
+
+.footer-nav ul li a{
+    color: var(--light-black);
+}
+
+.footer-nav ul li a:hover{
+    color: var(--Grayish-White);
+    transition: var(--transition);
+}
+
+.footer-socioicons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socioicon{
+    margin-left: 1em;
+}
+
+.socioicon:hover{
+    background-color: var(--light-black);
+}
+
+.copyright{
+    text-align: center;
+    font-family: var(--work-san);
+    font-weight: var(--light-font);
+    font-size: 14px;
+    color: var(--Grayish-White);
+    margin-top: 2em;
+}
+
+
+
+@media screen and (max-width: 720px) {
+
+    nav ul{
+        position: fixed;
+        background-color: var(--Fire-Opal);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li{
+        margin: 8px;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+
+    nav ul.show{
+        transform: translateX(0);
+    }
+
+
+    
+}
+
+
+
+@media screen and (min-width: 720px){
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .hero-text{
+        text-align: left;
+        padding-left: 5rem;
+    }
+
+    .logo-img-cont{
+        width: 25%;
+    }
+
+    .brand-logos{
+        justify-content: center;
+    }
+
+    .about{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about img{
+        width: 50%;
+    }
+
+     .hero img{
+        width: 50%;
+        height: auto;
+    }
+    
+    .service-cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        align-self: normal;
+    }
+
+    .card{
+        width: 30%;
+    }
+
+    .f-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
+}
+
